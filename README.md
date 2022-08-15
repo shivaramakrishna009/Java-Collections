@@ -59,6 +59,7 @@ List <data-type> list1= new ArrayList();
 List <data-type> list2 = new LinkedList();  
 List <data-type> list3 = new Vector();  
 List <data-type> list4 = new Stack();  
+  
 There are various methods in List interface that can be used to insert, delete, and access the elements from the list.
 
 The classes that implement the List interface are given below.
@@ -66,7 +67,7 @@ The classes that implement the List interface are given below.
 ### ArrayList
 The ArrayList class implements the List interface. It uses a dynamic array to store the duplicate element of different data types. The ArrayList class maintains the insertion order and is non-synchronized. The elements stored in the ArrayList class can be randomly accessed. Consider the following example.
   
-  import java.util.*;  
+ ```import java.util.*;  
 class TestJavaCollection1{  
 public static void main(String args[]){  
     ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
@@ -80,10 +81,11 @@ public static void main(String args[]){
       System.out.println(itr.next());  
     }  
   }  
-}  
-Output:
+} 
+```
   
-<p>Ravi<br>
+<p>Output:<br>
+Ravi<br>
 Vijay<br>
 Ravi<br>
 Ajay</p>
@@ -93,7 +95,7 @@ LinkedList implements the Collection interface. It uses a doubly linked list int
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection2{  
   public static void main(String args[]){  
     LinkedList<String> al=new LinkedList<String>();  
@@ -107,9 +109,9 @@ public class TestJavaCollection2{
     }  
   }  
 }  
-Output:
-
-<p>Ravi<br>
+  ```
+<p>Output:<br>
+Ravi<br>
 Vijay<br>
 Ravi<br>
 Ajay</p>
@@ -119,7 +121,7 @@ Vector uses a dynamic array to store the data elements. It is similar to ArrayLi
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection3{  
   public static void main(String args[]){  
     Vector<String> v=new Vector<String>();  
@@ -133,9 +135,9 @@ public class TestJavaCollection3{
     }  
   }  
 }  
-Output:
-
-<p>Ayush<br>
+  ```
+<p>Output:<br>
+Ayush<br>
 Amit<br>
 Ashish<br>
 Garima</p>
@@ -145,7 +147,7 @@ The stack is the subclass of Vector. It implements the last-in-first-out data st
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection4{  
   public static void main(String args[]){  
     Stack<String> stack = new Stack<String>();  
@@ -161,9 +163,9 @@ public class TestJavaCollection4{
     }  
   }  
 }  
-Output:
-
-<p>Ayush<br>
+  ```
+<p>Output:<br>
+Ayush<br>
 Garvit<br>
 Amit<br>
 Ashish</p>
@@ -175,6 +177,7 @@ Queue interface can be instantiated as:
 
 Queue<String> q1 = new PriorityQueue();  
 Queue<String> q2 = new ArrayDeque();  
+  
 There are various classes that implement the Queue interface, some of them are given below.
 
 ### PriorityQueue
@@ -182,7 +185,7 @@ The PriorityQueue class implements the Queue interface. It holds the elements or
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection5{  
   public static void main(String args[]){  
     PriorityQueue<String> queue=new PriorityQueue<String>();  
@@ -206,9 +209,9 @@ public class TestJavaCollection5{
     }  
   }  
 }  
-Output:
-
-<p>head:Amit Sharma<br>
+  ```
+<p>Output:<br>
+head:Amit Sharma<br>
 head:Amit Sharma<br>
 iterating the queue elements:<br>
 Amit Sharma<br>
@@ -232,7 +235,7 @@ ArrayDeque is faster than ArrayList and Stack and has no capacity restrictions.
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection6{  
   public static void main(String[] args) {  
     //Creating Deque and adding elements  
@@ -246,9 +249,9 @@ public class TestJavaCollection6{
     }  
   }  
 }  
-Output:
-
-<p>Gautam<br>
+  ```
+<p>Output:<br>
+Gautam<br>
 Karan<br>
 Ajay</p>
   
@@ -265,7 +268,7 @@ HashSet class implements Set Interface. It represents the collection that uses a
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection7{  
   public static void main(String args[]){  
     //Creating HashSet and adding elements  
@@ -281,9 +284,9 @@ public class TestJavaCollection7{
     }  
   }  
 }  
-Output:
-
-<p>Vijay<br>
+  ```
+<p>Output:<br>
+Vijay<br>
 Ravi<br>
 Ajay</p>
   
@@ -292,7 +295,7 @@ LinkedHashSet class represents the LinkedList implementation of Set Interface. I
 
 Consider the following example.
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection8{  
   public static void main(String args[]){  
     LinkedHashSet<String> set=new LinkedHashSet<String>();  
@@ -306,9 +309,9 @@ public class TestJavaCollection8{
     }  
   }  
 }  
-Output:
-
-<p>Ravi<br>
+  ```
+<p>Output:<br>
+Ravi<br>
 Vijay<br>
 Ajay</p>
   
@@ -323,7 +326,7 @@ Java TreeSet class implements the Set interface that uses a tree for storage. Li
 
 Consider the following example:
 
-import java.util.*;  
+```import java.util.*;  
 public class TestJavaCollection9{  
   public static void main(String args[]){  
     //Creating and adding elements  
@@ -339,9 +342,9 @@ public class TestJavaCollection9{
     }  
   }  
 }  
-Output:
-
-<p>Ajay<br>
+  ```
+<p>Output:<br>
+Ajay<br>
 Ravi<br>
 Vijay</p>
   
